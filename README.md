@@ -13,7 +13,7 @@ Uploaded to github to test out github actions.
 
 Run docker-compose
 
-```
+```terminal
 > docker-compose up
 ```
 
@@ -23,14 +23,14 @@ Run docker-compose
 
 ## Required Environment Variable
 
-| Name 	| Description  	|
-|---	|---	|
-| RUST_LOG  	| For logging  	|
-| HOST  	| Host IP Address   	|
-| PORT  	| IP port for exposing the API server  	|
-| DATABASE_URL  	| Url for postgres database  	|
-| REDIS_HOST  	| Host IP address for Redis  	|
-| REDIS_PORT  	| IP port for Redis  	|
+| Name          | Description |
+|---            |--- |
+| RUST_LOG      | For logging |
+| HOST          | Host IP Address |
+| PORT          | IP port for exposing the API server |
+| DATABASE_URL  | Url for postgres database |
+| REDIS_HOST    | Host IP address for Redis |
+| REDIS_PORT    | IP port for Redis |
 
 
 ## TODO
