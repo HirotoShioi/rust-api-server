@@ -94,7 +94,7 @@ impl Post {
             id: Uuid::new_v4(),
             title: new_post.title,
             body: new_post.body,
-            user_id: user_id,
+            user_id,
             created_at: Utc::now().naive_utc(),
             published: false,
             updated_at: None,

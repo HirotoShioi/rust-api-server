@@ -1,6 +1,7 @@
 # Rust API server
 
-API server build with rust using [actix-web](https://actix.rs/)
+API server build with rust using [actix-web](https://actix.rs/). Transcribed from this [article](https://cloudmaker.dev/how-to-create-a-rest-api-in-rust/).
+Uploaded to github to test out github actions.
 
 - API which supports simple CRUD for User and Post data
 - Database using [Diesel](http://diesel.rs/)
@@ -12,7 +13,7 @@ API server build with rust using [actix-web](https://actix.rs/)
 
 Run docker-compose
 
-```
+```terminal
 > docker-compose up
 ```
 
@@ -22,11 +23,18 @@ Run docker-compose
 
 ## Required Environment Variable
 
-| Name 	| Description  	|
-|---	|---	|
-| RUST_LOG  	| For logging  	|
-| HOST  	| Host IP Address   	|
-| PORT  	| IP port for exposing the API server  	|
-| DATABASE_URL  	| Url for postgres database  	|
-| REDIS_HOST  	| IP port for Redis  	|
-| REDIS_PORT  	| IP port for Redis  	|
+| Name          | Description |
+|---            |--- |
+| RUST_LOG      | For logging |
+| HOST          | Host IP Address |
+| PORT          | IP port for exposing the API server |
+| DATABASE_URL  | Url for postgres database |
+| REDIS_HOST    | Host IP address for Redis |
+| REDIS_PORT    | IP port for Redis |
+
+
+## TODO
+
+- [] Try to use anyhow or thiserror
+- [] Containerize this repo and deploy them somewhere
+- [] Try to generate swagger document

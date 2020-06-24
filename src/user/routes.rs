@@ -27,7 +27,7 @@ async fn sign_in(
 
     let is_valid = user.verify_password(credentials.password.as_bytes())?;
 
-    if is_valid == true {
+    if is_valid {
         session.set("user_id", user.id)?;
         session.renew();
         Ok(HttpResponse::Ok().json(user))
