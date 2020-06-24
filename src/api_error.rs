@@ -50,13 +50,12 @@ impl ResponseError for ApiError {
             Err(_) => StatusCode::INTERNAL_SERVER_ERROR,
         };
 
-        let message = match status_code.as_u16() < 500 {
-            true => self.message.clone(),
-            false => {
+        let message = if status_code.as_u16() < 500 {
+                self.message.clone()
+            } else {
                 error!("{}", self.message);
                 "Internal server error".to_string()
-            }
-        };
+            };
 
         HttpResponse::build(status_code).json(json!({ "message": message }))
     }
