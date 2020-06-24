@@ -3,13 +3,15 @@
 ![Rust](https://github.com/HirotoShioi/rust-api-server/workflows/Rust/badge.svg)
 ![Lint Code Base](https://github.com/HirotoShioi/rust-api-server/workflows/Lint%20Code%20Base/badge.svg)
 
-API server build with rust using [actix-web](https://actix.rs/). Transcribed from this [article](https://cloudmaker.dev/how-to-create-a-rest-api-in-rust/).
+API server build with rust using [actix-web](https://actix.rs/).
+
+Transcribed from this [article](https://cloudmaker.dev/how-to-create-a-rest-api-in-rust/).
+
 Uploaded to github to test out github actions.
 
-- API which supports simple CRUD for User and Post data
+- API which supports simple CRUD for `User` and `Post` data
 - Database using [Diesel](http://diesel.rs/)
-- Supports authentication using [argon2](https://docs.sru-systems.com/rust-argon2/0.8.0/argon2/)
-- Use [actix-session](https://docs.rs/actix-session/0.3.0/actix_session/) for authentication caching
+- Support session based authentication using [actix-session](https://docs.rs/actix-session/0.3.0/actix_session/)
 - Logging using [env-logger](https://docs.rs/env_logger/0.7.1/env_logger/) and [log](https://docs.rs/log/0.4.8/log/)
 
 ## How to run
@@ -38,6 +40,6 @@ Run docker-compose
 
 ## TODO
 
-- [] Try to use anyhow or thiserror
-- [] Containerize this repo and deploy them somewhere
-- [] Try to generate swagger document
+- Experiment with `anyhow` and `thiserror`
+- Containerize this repo and deploy them somewhere
+- Try to generate swagger document
