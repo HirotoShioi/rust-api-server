@@ -1,6 +1,7 @@
 # Rust API server
 
 ![Rust](https://github.com/HirotoShioi/rust-api-server/workflows/Rust/badge.svg)
+![Lint Code Base](https://github.com/HirotoShioi/rust-api-server/workflows/Lint%20Code%20Base/badge.svg)
 
 API server build with rust using [actix-web](https://actix.rs/). Transcribed from this [article](https://cloudmaker.dev/how-to-create-a-rest-api-in-rust/).
 Uploaded to github to test out github actions.
