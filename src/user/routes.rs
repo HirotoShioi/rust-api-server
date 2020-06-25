@@ -43,7 +43,7 @@ async fn sign_out(session: Session) -> Result<HttpResponse, ApiError> {
     Ok(HttpResponse::Ok().json(json!({"message": "Successfully signed out"})))
 }
 
-#[post("/regiser")]
+#[post("/register")]
 async fn register_user(user: web::Json<UserMessage>) -> Result<HttpResponse, ApiError> {
     let user = User::create(user.into_inner())?;
     Ok(HttpResponse::Ok().json(user))
